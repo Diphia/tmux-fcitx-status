@@ -1,7 +1,7 @@
 # tmux-fcitx-status
 Plug and show the fcitx status on the right corner of tmux status bar
 
-## Installation with [Tmux Plugin Manager]((https://github.com/tmux-plugins/tpm) (recommended)
+## Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 ```bash

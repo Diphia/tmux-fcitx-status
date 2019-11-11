@@ -50,15 +50,4 @@ main() {
 #do_interpolation 
 main
 
-#get_tmux_option "status-right" "bbb"
-#set_tmux_option "status-right" "bbb"
-
-
-comment(){
-current=`tmux show-option -gqv "status-right"`
-echo "1:${current}"
-interpolated="`source ${CURRENT_DIR}/scripts/fcitx_status.sh` ${current} "
-#echo ${interpolated}
-tmux set-option -gq status-right "${interpolated}"
-}
 

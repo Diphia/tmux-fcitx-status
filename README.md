@@ -1,6 +1,24 @@
 # tmux-fcitx-status
-<<<<<<< HEAD
 Plug and show the fcitx status on the right corner of tmux status bar
-=======
-Plug and show the fcitx status on the status bar
->>>>>>> 6fcb0a1e7e8d40ed7d5d97d281c82b802d8c89fd
+
+## Installation with [Tmux Plugin Manager]((https://github.com/tmux-plugins/tpm) (recommended)
+
+Add plugin to the list of TPM plugins in `.tmux.conf`:
+```bash
+set -g @plugin 'diphia/tmux-fcitx-status'
+```
+
+## Manual Installation
+
+Clone the repository:
+```bash
+$ git clone https://github.com/Diphia/tmux-fcitx-status.git
+```
+Add this line to the end of `.tmux.conf`:
+```bash
+run-shell ~/tmux-fcitx-status/tmux-fcitx-status.tmux
+```
+
+## Liscense
+
+[GPLv3](LICENSE)

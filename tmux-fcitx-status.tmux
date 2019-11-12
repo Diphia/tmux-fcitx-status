@@ -28,7 +28,8 @@ set_tmux_option() {
 do_interpolation() {
     local input=$1
     local result=""
-    result="${input}#{fcitx_status}#(${CURRENT_DIR}/scripts/fcitx_status.sh)"
+    result= echo ${input} | sed "s/#{fcitx_status}/`sh ${CURRENT_DIR}/scripts/fcitx_status.sh`/g"
+    #result= echo ${input} | sed "s/#{fcitx_status}/#(${CURRENT_DIR}/scripts/fcitx_status.sh)/g"
     # result=""
     #printf "${result}"
     echo ${result}
@@ -40,7 +41,6 @@ update_tmux_option() {
 	local new_option_value=$(do_interpolation "$option_value")
 	set_tmux_option "${option}" "${new_option_value}"
 }
-
 
 main() {
 	update_tmux_option "status-right"

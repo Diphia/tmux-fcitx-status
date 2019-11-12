@@ -30,8 +30,6 @@ do_interpolation() {
     local result=""
     result= echo ${input} | sed "s/#{fcitx_status}/`sh ${CURRENT_DIR}/scripts/fcitx_status.sh`/g"
     #result= echo ${input} | sed "s/#{fcitx_status}/#(${CURRENT_DIR}/scripts/fcitx_status.sh)/g"
-    # result=""
-    #printf "${result}"
     echo ${result}
 }
 
@@ -44,7 +42,7 @@ update_tmux_option() {
 
 main() {
 	update_tmux_option "status-right"
-	#update_tmux_option "status-left"
+	update_tmux_option "status-left"
 }
 
 #do_interpolation 

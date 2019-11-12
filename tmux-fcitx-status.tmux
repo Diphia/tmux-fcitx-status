@@ -28,8 +28,8 @@ set_tmux_option() {
 do_interpolation() {
     local input=$1
     local result=""
-    result= echo ${input} | sed "s/#{fcitx_status}/`sh ${CURRENT_DIR}/scripts/fcitx_status.sh`/g"
-    #result= echo ${input} | sed "s/#{fcitx_status}/#(${CURRENT_DIR}/scripts/fcitx_status.sh)/g"
+    #result="${input/\#\{fcitx_status\}/\#($CURRENT_DIR/scripts/fcitx_status.sh)}"
+    result=$(echo ${input} | sed "s?#{fcitx_status}?#($CURRENT_DIR/scripts/fcitx_status.sh)?g")
     echo ${result}
 }
 
@@ -45,7 +45,4 @@ main() {
 	update_tmux_option "status-left"
 }
 
-#do_interpolation 
 main
-
-

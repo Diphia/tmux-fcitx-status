@@ -4,7 +4,7 @@ im_code=`fcitx-remote`
 
 if [ ${im_code} == 1 ]
 then
-    im_status='#[bg=#80827f]en '
+    im_status='#[bg=#80827f]en'
 elif [ ${im_code} == 2 ]
 then
     im_status='#[bg=##1ad626]zh'

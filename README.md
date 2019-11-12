@@ -19,6 +19,13 @@ Add this line to the end of `.tmux.conf`:
 run-shell ~/tmux-fcitx-status/tmux-fcitx-status.tmux
 ```
 
+## Add Placeholder
+
+add `{fcitx_status}` to `.tmux.conf` like below:
+```bash
+set -g status-right "#{fcitx_status} #[bg=#0087ff] #H #[bg=#00346e] %A, %B %e %I:%M %p "
+```
+
 ## Liscense
 
 [GPLv3](LICENSE)

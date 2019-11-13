@@ -21,10 +21,14 @@ run-shell ~/tmux-fcitx-status/tmux-fcitx-status.tmux
 
 ## Add Placeholder
 
-add `{fcitx_status}` to `.tmux.conf` like below:
+add `#{fcitx_status}` to `.tmux.conf` like below:
 ```bash
 set -g status-right "#{fcitx_status} #[bg=#0087ff] #H #[bg=#00346e] %A, %B %e %I:%M %p "
 ```
+
+## Limitation
+
+You need to set var `status-interval` in a low value like 1 or 2 in `.tmux.conf`
 
 ## Liscense
 

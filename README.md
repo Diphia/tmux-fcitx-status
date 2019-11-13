@@ -7,6 +7,7 @@ Add plugin to the list of TPM plugins in `.tmux.conf`:
 ```bash
 set -g @plugin 'diphia/tmux-fcitx-status'
 ```
+then press Prefix + I to install the listed plugins
 
 ## Manual Installation
 

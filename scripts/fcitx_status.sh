@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# fcitx_status.sh
+# diphia@2019
+# This script is used to get the fcitx status from command, and it will add the color to the string 
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

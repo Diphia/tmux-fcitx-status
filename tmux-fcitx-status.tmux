@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# tmux-fcitx-status.tmux
+# diphia@2019
+# This script is used to insert the fcitx_status string to the original string
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 #CURRENT_DIR="/home/diphia/tmux-fcitx-status"
